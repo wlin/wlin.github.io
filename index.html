@@ -89,7 +89,7 @@
         <h1 id="Windows下GitHub-Hexo搭建个人博客"><a href="#Windows下GitHub-Hexo搭建个人博客" class="headerlink" title="Windows下GitHub + Hexo搭建个人博客"></a>Windows下GitHub + Hexo搭建个人博客</h1><h2 id="1、安装Git"><a href="#1、安装Git" class="headerlink" title="1、安装Git"></a>1、安装Git</h2><p>下载Windows下的Git客户端<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> 并安装，安装很简单，基本一路Next下去。</p>
 <h2 id="2、安装Node-js"><a href="#2、安装Node-js" class="headerlink" title="2、安装Node.js"></a>2、安装Node.js</h2><p>下载Node.js <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> 安装Node.js也是一路Next下去。</p>
 <h2 id="3、Github配置"><a href="#3、Github配置" class="headerlink" title="3、Github配置"></a>3、Github配置</h2><p>Github账号注册就不说了，登陆过后点击new repository，Repository name填写自己的名称 + .github.io，例如（test.github.io，test就是你的github账号的名称），其他的可以不用填写，也不需要改什么。</p>
-<p><img src="./howtosetupblog/20200102001.png" alt=""></p>
+<p><img src="./20200102001.png" alt=""></p>
 <p>然后直接点Create repository就可以了。</p>
 <h2 id="4、配置Github-SSH密钥"><a href="#4、配置Github-SSH密钥" class="headerlink" title="4、配置Github SSH密钥"></a>4、配置Github SSH密钥</h2><p>首先在桌面空白处鼠标右键选择Git Bash Here</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your's emaill address"</span></span><br></pre></td></tr></table></figure>
@@ -97,6 +97,7 @@
 
 <p>引号里面的内容输入你的邮箱地址，然后回车，会提示你文件保存的路径，这时候按回车键确认,然后会提示你输入密码，输入即可（输入密码是看不到的），然后会确认输入一次，就可以在刚刚的路径看到生成了两个文件，一个是id_rsa，另一个是id_rsa.pub，用notepadd++打开id_rsa.pub然后选中里面的全部内容，复制下来。</p>
 <p>登录github，点击头像可以看到setting选项，点击进入然后可以看到左边有一个SSH and GPG keys选项,点击就可以看到以下界面，点击New SSH</p>
+<p><img src="./20200102002.png" alt=""></p>
 <p>这里的Title随便填写，主要是为了方便管理密钥,然后把刚刚拷贝的内容粘贴到Key里面去,然后点击Add SSH key.到此，Github上面的SSH配置就算完成了</p>
 <h2 id="5、创建本地仓库与Github同步"><a href="#5、创建本地仓库与Github同步" class="headerlink" title="5、创建本地仓库与Github同步"></a>5、创建本地仓库与Github同步</h2><p>首先是在本地的任意一个分区创建一个任意的文件夹，路径中最好不要用中文吧，然后进入到刚刚创建的文件夹，右键，然后点击Git Bash Here</p>
 <p>打开Git Bash</p>
@@ -137,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/02/howtoSetupblog/" data-id="ck4wfrl6o0000h4uk0aimficf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/02/howtoSetupblog/" data-id="ck4wfxzrj00009cuk51b7dsrf" class="article-share-link">Share</a>
       
       
     </footer>
